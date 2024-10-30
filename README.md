@@ -1,3 +1,16 @@
+# ELK-BLEDOM-bluetooth-led-strip-controller
+A Rust controller for sending commands to Chinese generic Bluetooth LED strip controllers (ELK-BLEDOM).
+
+## Features
+- Control RGB LED strips via Bluetooth
+- Set static colors with RGB values
+- Adjust brightness
+- Built-in animations (Flash, Strobe, Fade, Smooth)
+- Warm white mode with adjustable intensity
+- Power on/off control
+
+## Building from source
+
 # Development
 
 1. Install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm

@@ -1,0 +1,31 @@
+/* Force le mode sombre immédiatement */
+:root {
+    color-scheme: dark;
+}
+
+html {
+    background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Style immédiat pour tout */
+*, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Désactive toutes les transitions au chargement */
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    animation: none !important;
+}

@@ -1,14 +1,16 @@
 [package]
-name = "elk-gui"
+name = "elk-bledom-gui"
 version = "0.1.0"
-authors = ["TomBombadilom <tom@croll.fr>"]
 edition = "2021"
+
+[package.metadata.build]
+pre-build = ["npx tailwindcss -i ./input.css -o ./dist/output.css"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-
-dioxus = { version = "0.5", features = ["desktop", "router"] }
-
-# Debug
-dioxus-logger = "0.5.1"
+dioxus = { version = "0.5", features = ["desktop"] }
+dioxus-desktop = "0.5"
+btleplug = "0.11"
+tokio = { version = "1.36", features = ["full"] }
+mio = "0.8"
